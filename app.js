@@ -1,4 +1,16 @@
+// SECTION NAV BAR
 
+const navBar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+
+  if (window.scrollY >= 1400) {
+    navBar.classList.add('opacAdd');
+  } else {
+    navBar.classList.remove('opacAdd');
+  }
+
+})
 
 // SECTION PARTICLE FOOTER
 
