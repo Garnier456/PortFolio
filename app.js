@@ -4,7 +4,7 @@ const navBar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
 
-  if (window.scrollY >= 1400) {
+  if (window.scrollY >= 500) {
     navBar.classList.add('opacAdd');
   } else {
     navBar.classList.remove('opacAdd');
