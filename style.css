@@ -253,7 +253,7 @@ section img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 105vh;
+  height: 100vh;
   gap: 4rem;
   margin-bottom: 5rem;
 }
@@ -269,19 +269,20 @@ section img {
 }
 
 /***** SECTION PROJETS *****/
-#titreProjet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -6rem;
-}
 
 #projets {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 130vh;
-  margin-top: -5rem;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
+#flex-projet {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
 }
 
 .circuit {
@@ -313,7 +314,7 @@ section img {
   }
 
   to {
-    transform: translate(30px, -30px);
+    transform: translate(60px, -60px);
   }
 }
 
@@ -370,7 +371,7 @@ section img {
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 76vh;
+  height: 80vh;
 }
 
 #lienBox {
@@ -402,6 +403,106 @@ section img {
   font-size: 2rem;
 }
 
+/* MEDIA QUEREIS */
+
+/* NAV BAR */
+
+@media only screen and (max-width: 900px) {
+  nav a {
+    display: none;
+  }
+
+  #button {
+    display: inline-block;
+  }
+}
+
+/* HEADER */
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 50vh;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  #firstPage {
+    flex-direction: column;
+  }
+
+  #prez {
+    width: 90%;
+  }
+
+  #arrow {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+/* ABOUT */
+
+@media only screen and (max-width: 900px) {
+  #about {
+    height: 80vh;
+  }
+
+  #imgAbout {
+    display: none;
+  }
+}
+
+/* COMPETENCES */
+
+@media only screen and (max-width: 900px) {
+  #compétences {
+    height: 50vh;
+  }
+
+  #donut {
+    width: 150%;
+  }
+}
+
+/* COMPETENCES */
+
+@media only screen and (max-width: 900px) {
+  #projets {
+    height: 130vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projets h2 {
+    margin-bottom: 8rem;
+  }
+
+  #flex-projet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .projetBox {
+    height: 35vh;
+    width: 50vw;
+  }
+
+  .circuit {
+    height: 33vh;
+    width: 50vw;
+  }
+}
+
+/* CONTACT */
+
+@media only screen and (max-width: 900px) {
+  
+}
 
 
 
