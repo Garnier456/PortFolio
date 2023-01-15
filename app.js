@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     navBar.classList.remove('opacAdd');
   }
 
-})
+});
 
 // SECTION PARTICLE FOOTER
 
@@ -124,3 +124,26 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+// SECTION API
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1ba585936cmsh4cd9cef25f9e740p15db57jsncdb5e5b39062',
+		'X-RapidAPI-Host': 'facts-by-api-ninjas.p.rapidapi.com'
+	}
+};
+
+fetch('https://facts-by-api-ninjas.p.rapidapi.com/v1/facts', options)
+	.then(response => response.json())
+	.then(data => {
+    let quotes = document.querySelector('#quotes');
+    quotes.innerHTML = data[0].fact;
+    quotes.style.fontSize = "1rem";
+
+    console.log(data);
+  })
+	.catch(err => {
+    console.log('Erreur', error)
+  });

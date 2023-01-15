@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/76e1dcc4c0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -107,24 +108,30 @@
 
     <div id="flex-projet">
       <div class="circuit">
-        <div class="projetBox left">
+        <a href="https://github.com/Garnier456/Industrious.git" target="_blank">
+          <div class="projetBox left">
           <div class="projetImg industrious"></div>
           <p>Premier projet réaliser en utilisant HTML et CSS.</p>
         </div>
+      </a>
       </div>
   
       <div class="circuit">
-        <div class="projetBox mid">
-          <div class="projetImg business "></div>
-          <p>Projet réaliser en groupe avec pour objectif de le rendre responsive</p>
-        </div>
+        <a href="https://github.com/Garnier456/Businness-Co.git">
+          <div class="projetBox mid">
+            <div class="projetImg business "></div>
+            <p>Projet réaliser en groupe avec pour objectif de le rendre responsive</p>
+          </div>
+        </a>
       </div>
   
       <div class="circuit">
-        <div class="projetBox right">
-          <div class="projetImg formulaire"></div>
-          <p>Projet qui pour mission de créer un formulaire à l'aide de Javascript</p>
-        </div>
+        <a href="https://github.com/Garnier456/formulaire.git">
+          <div class="projetBox right">
+            <div class="projetImg formulaire"></div>
+            <p>Projet qui pour mission de créer un formulaire à l'aide de Javascript</p>
+          </div>
+        </a>
       </div>
     </div>
     
@@ -134,10 +141,10 @@
 
   <h2 id="titreContact">Contact</h2>  
 
-  <section id="particles-js">
+  <footer id="particles-js">
       <div id="particles-js">
         <div id="lienBox">
-          <div class="lien">
+          <div class="lien bis">
             <span>
               <i class="fa-solid fa-envelope"></i>
               <p>mr.ogarnier@gmail.com</p>
@@ -162,12 +169,22 @@
   
             <span>
               <i class="fa-brands fa-linkedin"></i>
-              <p>www.linkedin.com/in/olivier-garnier-516917250</p>
+              <p>www.linkedin.com 
+                <br>  in/olivier-garnier-516917250</p>
+            </span>
+
+            <span id="citation">
+              <p>Et voici un petite citation</p>
+              <div id="quotes"></div>
             </span>
           </div>
+
+          
         </div>
       </div>
-  </section>
+  </footer>
+
+  <div id="quotes"></div>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="app.js"></script>
