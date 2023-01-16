@@ -12,6 +12,8 @@ window.addEventListener('scroll', () => {
 
 });
 
+// BODY 
+
 // SECTION PARTICLE FOOTER
 
 particlesJS("particles-js", {
@@ -139,7 +141,7 @@ fetch('https://facts-by-api-ninjas.p.rapidapi.com/v1/facts', options)
 	.then(response => response.json())
 	.then(data => {
     let quotes = document.querySelector('#quotes');
-    quotes.innerHTML = data[0].fact;
+    quotes.innerHTML = `" ${data[0].fact} "`;
     quotes.style.fontSize = "1rem";
 
     console.log(data);
